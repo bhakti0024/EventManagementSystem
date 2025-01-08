@@ -68,3 +68,28 @@ h2 {
     color: #444;
 }
 
+.editable {
+    color: #4CAF50;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.editing {
+    background-color: #e6f7e6;
+    border: 2px solid #4CAF50;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+input[type="text"].editing, input[type="date"].editing, textarea.editing {
+    background-color: #e6f7e6;
+    border: 2px solid #4CAF50;
+}
+
+button.cancel {
+    background-color: #ffcc00;
+}
+
+button.cancel:hover {
+    background-color: #e6b800;
+}
