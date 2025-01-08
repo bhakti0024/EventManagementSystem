@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header with modern design -->
-        <header>
+    <div class="main-container">
+        <!-- Header with modern typography -->
+        <header class="header">
             <h1>Event Management</h1>
-            <p>Create, Manage, and Edit Your Events</p>
+            <p>Effortlessly Create, Manage, and Edit Your Events</p>
         </header>
 
-        <!-- Event Form -->
+        <!-- Form Section -->
         <div class="form-container">
-            <h2>Create or Edit Event</h2>
+            <h2>Create or Edit Your Event</h2>
             <form id="eventForm">
                 <input type="text" id="eventName" placeholder="Event Name" required>
                 <input type="date" id="eventDate" required>
-                <textarea id="eventDescription" placeholder="Event Description"></textarea>
+                <textarea id="eventDescription" placeholder="Event Description" required></textarea>
                 <button type="submit">Create Event</button>
             </form>
         </div>
 
-        <!-- Event List -->
+        <!-- Upcoming Events List -->
         <div class="event-list-container">
             <h2>Upcoming Events</h2>
             <ul id="eventList"></ul>
