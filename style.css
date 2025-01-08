@@ -5,65 +5,78 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #f7a7b2, #ffbb8b);
-    color: #333;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb); /* Gradient Background */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    width: 80%;
-    max-width: 900px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
-/* Header */
-header {
-    margin-bottom: 30px;
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+/* Header Styling */
+.header {
+    margin-bottom: 40px;
     color: #fff;
 }
 
-header h1 {
+.header h1 {
     font-size: 3em;
     letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-header p {
+.header p {
     font-size: 1.2em;
-    color: #fff;
-    margin-top: 5px;
+    color: #f0f0f0;
+    margin-top: 10px;
 }
 
-/* Form Styling */
+/* Form Section Styling */
 .form-container {
-    background-color: #fff;
-    padding: 20px;
+    background-color: #f9f9f9;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+}
+
+.form-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 input[type="text"], input[type="date"], textarea {
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px;
+    margin: 12px 0;
     border-radius: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     font-size: 1.1em;
-    transition: border-color 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="date"]:focus, textarea:focus {
-    border-color: #ffbb8b;
+    border-color: #4e54c8;
     outline: none;
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.5);
 }
 
 textarea {
@@ -72,48 +85,60 @@ textarea {
 }
 
 button {
-    background-color: #ff6347;
+    background-color: #4e54c8;
     color: #fff;
-    padding: 12px 20px;
+    padding: 14px 25px;
     font-size: 1.2em;
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     width: 100%;
-    transition: background-color 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
 button:hover {
-    background-color: #ff7f50;
+    background-color: #3e44b2;
 }
 
-/* Event List Styling */
+/* Event List Section Styling */
 .event-list-container {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1em;
 }
 
 li:hover {
-    background-color: #f1f1f1;
+    background-color: #e6f0ff;
+}
+
+li strong {
+    font-size: 1.3em;
+    color: #333;
+}
+
+li span {
+    color: #777;
 }
 
 button.edit, button.delete {
@@ -123,7 +148,8 @@ button.edit, button.delete {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
 }
 
 button.edit:hover {
