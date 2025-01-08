@@ -93,3 +93,17 @@ button.cancel {
 button.cancel:hover {
     background-color: #e6b800;
 }
+button.edit
+{
+    background-color: #ffcc00;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.edit:hover {
+    background-color: #e6b800;
+}
+
